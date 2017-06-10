@@ -1,0 +1,91 @@
+<!doctype>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+<div style="position:fixed;
+        width:100%;
+        top:0;
+        right:0; " >
+<a href="#here8">here8</a></br>
+<a href="#here7">here7</a></br>
+<a href="#here6">here6</a></br>
+<a href="#here5">here5</a></br>
+<a href="#here4">here4</a></br>
+
+<a href="#here3">here3</a></br>
+<a href="#here2">here2</a></br>
+<a href="#here1">here1</a></br>
+</div>
+
+
+<div id="here1" style="width:100%;height:500px;background-color:yellow;">
+I am here1
+</div>
+<hr></hr>
+
+<div id="here2" style="width:100%;height:500px;background-color:yellow;">
+I am here2
+</div>
+<hr></hr>
+
+<div id="here3" style="width:100%;height:500px;background-color:yellow;">
+I am here3
+</div>
+<hr></hr>
+
+<div id="here4" style="width:100%;height:500px;background-color:yellow;">
+I am here4
+</div>
+<hr></hr>
+
+<div id="here5" style="width:100%;height:500px;background-color:yellow;">
+I am here5
+</div>
+<hr></hr>
+
+<div id="here6" style="width:100%;height:500px;background-color:yellow;">
+I am here6
+</div>
+<hr></hr>
+
+<div id="here7" style="width:100%;height:500px;background-color:yellow;">
+I am here7
+</div>
+<hr></hr>
+<section id="here8" >
+<div style="width:100%;height:500px;background-color:yellow;">
+I am here8
+</div>
+<hr></hr>
+</section>
+</body>
+</html
+
