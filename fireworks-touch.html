@@ -48,8 +48,11 @@
 	<!-- setup our canvas element -->
 	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 	<div id="animate_text" style="position:absolute; top: 20%;
-  left: 50%;transform: translate(-50%, -50%); z-index:0; font-weight:bold;font-style: italic; font-size: 30px;background-color: transparent; display:inline-block; ">Happy Diwali<br>Chandra</div>
-
+  left: 50%;transform: translate(-50%, -50%); z-index:0; font-style: italic; font-size: 40px;background-color: transparent; display:inline-block; ">WISH YOU AND YOUR FAMILY A VERY HAPPY DIWALI</div>
+<div id="animate_text" style="position:absolute; top: 45%;
+  left: 50%;transform: translate(-50%, -50%); z-index:0; font-style: italic; font-size: 40px;background-color: transparent; display:inline-block; ">Your lovely friend<br>--Chandra Sekar</div>
+  <div id="animate_text" style="position:absolute; top: 70%;
+  left: 50%;transform: translate(-50%, -50%); z-index:0; font-style: italic; font-size: 40px;background-color: transparent; display:inline-block; ">Touch anywhere in screen</div>
 	<script type="text/javascript">
 
 		window.requestAnimFrame = ( function() {
@@ -283,15 +286,15 @@
 			}
 			
 			// launch fireworks automatically to random coordinates, when the mouse isn't down
-			// if( timerTick >= timerTotal ) {
-			// 	if( !mousedown ) {
-			// 		// start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
-			// 		fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
-			// 		timerTick = 0;
-			// 	}
-			// } else {
-			// 	timerTick++;
-			// }
+			if( timerTick >= timerTotal ) {
+				if( !mousedown ) {
+					// start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
+					fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+					timerTick = 0;
+				}
+			} else {
+				timerTick++;
+			}
 			
 			// limit the rate at which fireworks get launched when mouse is down
 			if( limiterTick >= limiterTotal ) {
