@@ -313,9 +313,10 @@
 		});
 
 			canvas.addEventListener( 'touchmove', function( e ) {
-				e.preventDefault();
+
 			mx = (event.targetTouches[0] ? event.targetTouches[0].pageX : event.changedTouches[event.changedTouches.length-1].pageX)
 			my = (event.targetTouches[0] ? event.targetTouches[0].pageY : event.changedTouches[event.changedTouches.length-1].pageY)
+			e.preventDefault();
 		});
 
 		// toggle mousedown state and prevent canvas from being selected
@@ -330,6 +331,8 @@
 		});
 
 		canvas.addEventListener( 'touchstart', function( e ) {
+			mx = (event.targetTouches[0] ? event.targetTouches[0].pageX : event.changedTouches[event.changedTouches.length-1].pageX)
+			my = (event.targetTouches[0] ? event.targetTouches[0].pageY : event.changedTouches[event.changedTouches.length-1].pageY)
 			e.preventDefault();
 			mousedown = true;
 		});
