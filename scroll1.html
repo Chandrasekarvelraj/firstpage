@@ -314,6 +314,12 @@ window.addEventListener("load", downloadJSAtOnload, false);
 else if (window.attachEvent)
 window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
+
+var test_json = $.getJSON("test.json", function (data) {
+    $.each(data, function (index, value) {
+       console.log(value);
+    });
+  });
 </script>
 </body>
 </html
