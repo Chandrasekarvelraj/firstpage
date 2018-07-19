@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<Placemark>
+		<ExtendedData>
+			<Data name="stroke">
+				<value>#555555</value>
+			</Data>
+			<Data name="stroke-width">
+				<value>2</value>
+			</Data>
+			<Data name="stroke-opacity">
+				<value>1</value>
+			</Data>
+			<Data name="fill">
+				<value>#555555</value>
+			</Data>
+			<Data name="fill-opacity">
+				<value>0.5</value>
+			</Data>
+			<Data name="editable">
+				<value>true</value>
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						438.54949951171875,14.926208323277042 438.5906982421875,14.93416989934271 438.63464355468744,14.841266523421364 438.5577392578125,14.806749372133767 438.629150390625,14.466596475463248 438.7774658203125,14.32825967774278 439.07958984375,14.291000538604875 439.3817138671875,14.370833973406821 439.4915771484375,14.620793580827348 439.486083984375,14.902321826141808 439.25537109375,15.093339268117337 439.07409667968744,15.156973713377667 438.958740234375,15.252389472825634 438.53302001953125,15.297431875568801 438.54949951171875,14.926208323277042
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<ExtendedData></ExtendedData>
+		<Point>
+			<coordinates>
+				438.9642333984375,14.84923123791421
+			</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<ExtendedData></ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						439.14825439453125,15.382191285789844 439.4174194335937,15.207337412673624 439.5245361328125,15.318624951383336 439.815673828125,15.390135715305217 439.7579956054687,15.50661910663357 439.552001953125,15.61245612714906 439.2581176757812,15.654775665159686 439.09332275390625,15.630972001280334 439.05487060546875,15.533083462584468 439.14825439453125,15.382191285789844
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
