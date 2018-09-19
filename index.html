@@ -77,7 +77,10 @@
   var url;
   var loc = document.getElementById("setURL");
   
-  url = "sms:+919698288690;?&body=" + encodeURIComponent("I am sending message from iphone and android");
+  if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1)
+    url = "sms:+919698288690;?&body=" + encodeURIComponent("I am sending message from iphone");
+  else
+    url = "sms:+919698288690?body=" + encodeURIComponent("I am sending message from android");
 
   loc.setAttribute("href", url);
 })();
